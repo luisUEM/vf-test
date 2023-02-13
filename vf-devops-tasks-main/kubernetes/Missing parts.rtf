@@ -1,5 +1,5 @@
 
-	•	Identify and fix the runner pod that is crashing
+•	Identify and fix the runner pod that is crashing
 
 It could be for differents reasons: 
 
@@ -8,7 +8,7 @@ It could be for differents reasons:
  - memory limits aro too low 
  - Trying to bind an existing ports
 
-	•	Make the web application highly-available as much as possible
+•	Make the web application highly-available as much as possible
 
 Docker swarm uses the Raft Consensus Algorithm to manage the global cluster state, Raft makes sure that all the manager nodes in the cluster who manage and schedule tasks are storing the same consistent state.
 Having the same state across the cluster means that in case of a failure of the leader manager node any manager node can pickup-tasks and restore the services to a stable state, the state is propagated across the cluster manager nodes by replicating Raft logs.
