@@ -12,3 +12,13 @@ It could be for differents reasons:
 
 Docker swarm uses the Raft Consensus Algorithm to manage the global cluster state, Raft makes sure that all the manager nodes in the cluster who manage and schedule tasks are storing the same consistent state.
 Having the same state across the cluster means that in case of a failure of the leader manager node any manager node can pickup-tasks and restore the services to a stable state, the state is propagated across the cluster manager nodes by replicating Raft logs.
+
+
+
+
+
+
+
+
+
+
