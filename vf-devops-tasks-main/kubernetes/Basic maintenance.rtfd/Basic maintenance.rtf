@@ -1,0 +1,24 @@
+Basic Maintenance 
+
+Provide the commands that answer these questions:
+
+	•	Which is/are the hostname(s) in your cluster?
+	
+- docker ps ( to see al containers ) - use the container name 
+- docker exec -it “names” env 
+
+
+	•	How do you safely remove all pods from a node?
+
+- kubectl get nodes ( to see all pods running in the node )
+- kubectl cordon <nodename> ( To block the node and make sure that no other pods will be created in the node )
+
+	•	How do you restart a deployment without downtime?
+
+- Kubectl get nodes
+- kubectl rollout restart deployments <deployment_name>
+
+
+	•	How do you check the logs from a specific namespace?
+
+- kubectl logs pod name -n namespace
